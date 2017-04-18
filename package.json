@@ -1,1 +1,40 @@
-{     "devDependencies": {         "reflect-metadata": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-reflect-metadata",     "homepage": "https://github.com/npmtest/node-npmtest-reflect-metadata",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-reflect-metadata.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [reflect-metadata (v0.1.10)](http://rbuckton.github.io/reflect-metadata) [![npm package](https://img.shields.io/npm/v/npmtest-reflect-metadata.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-reflect-metadata) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-reflect-metadata.svg)](https://travis-ci.org/npmtest/node-npmtest-reflect-metadata)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "reflect-metadata": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-reflect-metadata",
+    "keywords": [
+        "coverage",
+        "test",
+        "reflect-metadata"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_reflect_metadata.js",
+    "name": "npmtest-reflect-metadata",
+    "nameAlias": "npmtest_reflect_metadata",
+    "nameOriginal": "npmtest-reflect-metadata",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-reflect-metadata.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
