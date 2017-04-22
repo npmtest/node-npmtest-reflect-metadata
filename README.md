@@ -1,4 +1,7 @@
-# test coverage for  [reflect-metadata (v0.1.10)](http://rbuckton.github.io/reflect-metadata)  [![npm package](https://img.shields.io/npm/v/npmtest-reflect-metadata.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-reflect-metadata) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-reflect-metadata.svg)](https://travis-ci.org/npmtest/node-npmtest-reflect-metadata)
+# npmtest-reflect-metadata
+
+#### basic test coverage for  [reflect-metadata (v0.1.10)](http://rbuckton.github.io/reflect-metadata)  [![npm package](https://img.shields.io/npm/v/npmtest-reflect-metadata.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-reflect-metadata) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-reflect-metadata.svg)](https://travis-ci.org/npmtest/node-npmtest-reflect-metadata)
+
 #### Polyfill for Metadata Reflection API
 
 [![NPM](https://nodei.co/npm/reflect-metadata.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/reflect-metadata)
@@ -100,7 +103,8 @@
     "typescript": {
         "definition": "Reflect.d.ts"
     },
-    "version": "0.1.10"
+    "version": "0.1.10",
+    "bin": {}
 }
 ```
 
